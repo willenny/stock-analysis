@@ -44,9 +44,9 @@ Note: The way that the code is written for starting price and ending price assum
 
 After sorting each years returns from largest to smallest, we see that Steve's parents stock DQ did excellent in 2017, but poorly in 2018. Based on consistent returns, I would suggest Steve look further into ENPH and RUN, as those were the two stocks that had positive returns in both years. 
 
-![alt text](https://github.com/willenny/kickstarter-analysis/blob/main/2017_All Stocks Analysis Returns.png?raw=true)
+![alt text](https://github.com/willenny/stock-analysis/blob/main/2017_All_Stocks_Analysis_Returns.png?raw=true)
 
-![alt text](https://github.com/willenny/kickstarter-analysis/blob/main/2018_All Stocks Analysis Returns.png?raw=true)
+![alt text](https://github.com/willenny/stock-analysis/blob/main/2018_All_Stocks_Analysis_Returns.png?raw=true)
 
 ## Summary
 
