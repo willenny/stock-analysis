@@ -44,9 +44,7 @@ To determine the ending price for each ticker, a similar if statement is used bu
 
 After sorting each years returns from largest to smallest, we see that Steve's parents stock DQ did excellent in 2017, but poorly in 2018. Based on consistent returns, I would suggest Steve look further into ENPH and RUN, as those were the two stocks that had positive returns in both years. 
 
-![2017_All_Stocks_Analysis_Returns](https://user-images.githubusercontent.com/109091887/183675282-135b713f-dac4-4363-9051-4dae364ee42e.PNG)
-
-![2018_All_Stocks_Analysis_Returns](https://user-images.githubusercontent.com/109091887/183675308-540de1a9-6af6-4798-9875-905b4521d002.PNG)
+![2017_All_Stocks_Analysis_Returns](https://user-images.githubusercontent.com/109091887/183675282-135b713f-dac4-4363-9051-4dae364ee42e.PNG)          ![2018_All_Stocks_Analysis_Returns](https://user-images.githubusercontent.com/109091887/183675308-540de1a9-6af6-4798-9875-905b4521d002.PNG)
 
 ## Summary
 
