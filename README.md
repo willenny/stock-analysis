@@ -7,7 +7,7 @@ By using Excel's Visual Basic for Applications, or VBA, we are able to write scr
 
 ## Analysis and Results
 
-### Analysis of Total Daily Volume and Returns
+### Analysis of Total Daily Volume
 
 Using my knowledge of VBA and the starter code provided in this Challenge, I was able to refactor the scipt so that I looped through the data one time and collected all of the information. 
 
@@ -15,12 +15,20 @@ A helpful tool that was used to streamline Steve's analysis was including an Inp
 
 To help with this desciption, I will use the concrete example of the ticker "AY". 
 
-Steve requested that I collected the Total Daily Volume and Returns for each stock. To do this, I created nested for loops. The outer loop focused on each ticker one at a time, using a tickerIndex variable. Since "AY" was our first ticker, it would have a tickerIndex of 0. This meant that the inner loop would only focus on finding the ticker "AY" and collect and store the information associated with it, then the outer loop will move onto the next ticker, "CSIQ", and so forth. The inner loop cycled through all of the rows, in column 1, in the sheet to search for the current tickerIndex, "AY". Once the code indentified that the cell contained "AY" we used 'tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value' to increase the Total Daily Volume for "AY". Using an array was very beneficial in this process because because the tickerVolumes array will be able to hold the Total Daily Volume for each ticker, based on the tickerIndex. 
+Steve requested that I collected the Total Daily Volume and Returns for each stock. To do this, I created nested for loops. The outer loop focused on each ticker one at a time, using a tickerIndex variable. Since "AY" was our first ticker, it would have a tickerIndex of 0. This meant that the inner loop would only focus on finding the ticker "AY" and collect and store the information associated with it, then the outer loop will move onto the next ticker, "CSIQ", and so forth. The inner loop cycled through all of the rows, in column 1, in the sheet to search for the current tickerIndex, "AY". Once the code indentified that the cell contained "AY" we used the code 'tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value' to increase the Total Daily Volume for "AY". Notice the Total Daily Volume is being stored in an array called tickerVolumes.
+
+Using an array was very beneficial in this process because the tickerVolumes array will be able to hold the Total Daily Volume for each ticker, based on the tickerIndex. I like to think of an array as a table like the one shown below. Since we are focusing on "AY", which has a tickerIndex of 0,  we are storing the Total Daily Volume for "AY" in the first, left-most, cell in the array. Once that information is collected, our inner loop will continue to cycle through the rows until it finds the next "AY". Then it will use the same code as above to update and store the new Total Daily Volume in the array, in it's correct tickerIndex position. This will continue until the inner loop has cycled through all rows containing "AY", at which point the outer loop will move to the next tickerIndex and the same process will begin for the next ticker "CSIQ".
+
+tickerVolumes array
+
+|tickerIndex       |  0  |   1  |  2  | ... |
+|------------------|-----|------|-----|-----|
+|Total Daily Volume|  AY | CSIQ |  DQ | ... |
 
 
+### Analysis of Returns
 
-
-
+At the same time that the inner loop is cycling through each row to collect the Total Daily Volume for "AY", the code is also determining the starting price and ending price. 
 
 ## Summary
 
