@@ -11,11 +11,11 @@ By using Excel's Visual Basic for Applications, or VBA, we are able to write scr
 
 Using my knowledge of VBA and the starter code provided in this Challenge, I was able to refactor the scipt so that I looped through the data one time and collected all of the information. 
 
-A helpful tool that was used to streamline Steve's analysis was including an InputBox. This allowed Steve to enter the year that he wanted to analyze. 
+A helpful tool that was used to streamline Steve's analysis was including an InputBox. This allowed Steve to enter the year that he wanted to analyze. In the future, he can insert new sheets each year and use the same workbook to make his analysis.
 
 To help with this desciption, I will use the concrete example of the ticker "AY". 
 
-The first piece of information that we collected was the Total Daily Volume. To do this, I created nested for loops. The outer loop focused on each ticker one at a time, using a tickerIndex variable. Since "AY" was our first ticker, it would have a tickerIndex of 0. This meant that the inner loop would only focus on finding the ticker "AY", collect all of the information associated with "AY", then move onto the next ticker, "CSIQ", and so forth. The inner loop cycled through all of the rows, in column 1, in the sheet to search for the current tickerIndex, "AY". Once the code indentified that the cell contained "AY" we used 'tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value' to increase 
+Steve requested that I collected the Total Daily Volume and Returns for each stock. To do this, I created nested for loops. The outer loop focused on each ticker one at a time, using a tickerIndex variable. Since "AY" was our first ticker, it would have a tickerIndex of 0. This meant that the inner loop would only focus on finding the ticker "AY" and collect and store the information associated with it, then the outer loop will move onto the next ticker, "CSIQ", and so forth. The inner loop cycled through all of the rows, in column 1, in the sheet to search for the current tickerIndex, "AY". Once the code indentified that the cell contained "AY" we used 'tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value' to increase the Total Daily Volume for "AY". Using an array was very beneficial in this process because because the tickerVolumes array will be able to hold the Total Daily Volume for each ticker, based on the tickerIndex. 
 
 
 
